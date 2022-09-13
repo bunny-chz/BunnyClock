@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bunny.clock">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BunnyCLock">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorLandscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyAboutPage"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".LicensePage"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".NightModeSetting"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".SettingOption"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".BackgroundSetting"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

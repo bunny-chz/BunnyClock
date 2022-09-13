@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="#0071FE"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="27dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:id="@+id/Common_edit_color_layout"
+            android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/common_edit_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_edit_color"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/common_edit_color_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_edit_color_title_text"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/common_edit_color_select"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:onClick="common_edit_color_select"
+            android:text="@string/common_edit_color_select"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape2"/>
+
+        <View
+            android:id="@+id/common_edit_color_select_round"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="common_edit_color_select_round"
+            android:layout_gravity="center"
+            android:background="@drawable/round"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Quote_edit_color_layout"
+            android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Switch
+                android:id="@+id/quote_SW"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:onClick="quote_SW"
+                android:gravity="center"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:id="@+id/quote_SW_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textColor="#FF4A4A"
+                android:text="@string/quote_SW_tip"
+                android:layout_marginStart="15dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quote_edit_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quote_edit_color"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            />
+
+        <TextView
+            android:id="@+id/quote_edit_color_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quote_edit_color_title_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/quote_edit_color_select"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:onClick="quote_edit_color_select"
+                android:text="@string/common_edit_color_select"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape2"/>
+
+            <View
+                android:id="@+id/quote_edit_color_select_round"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="quote_edit_color_select_round"
+                android:layout_gravity="center"
+                android:background="@drawable/round"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+         <TextView
+            android:id="@+id/EditTextSize"
+            android:text="@string/EditTextSize"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+             android:layout_marginTop="15dp"
+             />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#888787"
+            />
+
+        <TextView
+            android:id="@+id/EditClockLayoutParam"
+            android:text="@string/EditClockLayoutParam"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:layout_marginBottom="13dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/EditQuoteText"
+            android:text="@string/EditQuoteText"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#888787"
+            />
+
+        <TextView
+            android:id="@+id/EditQuoteTextSize"
+            android:text="@string/EditQuoteTextSize"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#888787"
+            />
+
+        <TextView
+            android:id="@+id/EditQuoteLayoutParam"
+            android:text="@string/EditQuoteLayoutParam"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:layout_marginBottom="13dp"
+
+            />
+
+        <TextView
+            android:id="@+id/AutoNightMode"
+            android:text="@string/AutoNightMode"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#888787"
+            />
+
+        <TextView
+            android:id="@+id/EditBackground"
+            android:text="@string/EditBackground"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:layout_marginBottom="13dp"
+            />
+
+    <LinearLayout
+        android:id="@+id/DoNotDisturbLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="13dp">
+
+        <TextView
+            android:id="@+id/DoNotDisturb"
+            android:text="@string/DoNotDisturb"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            android:id="@+id/DoNotDisturb_SW_Layout"
+            android:background="#ffffff">
+
+
+        <Switch
+            android:id="@+id/DoNotDisturb_SW"
+            android:onClick="DoNotDisturb_SW"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:gravity="center"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/DoNotDisturb_SW_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textColor="#FF4A4A"
+            android:text="@string/DoNotDisturb_SW_tip"
+            android:layout_marginStart="15dp"
+            />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/DoNotDisturbTip_ON"
+            android:text="@string/DoNotDisturbTip_ON"
+            android:textSize="12sp"
+            android:textAlignment="textStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <TextView
+            android:id="@+id/DoNotDisturbTip_OFF"
+            android:text="@string/DoNotDisturbTip_OFF"
+            android:textSize="12sp"
+            android:textAlignment="textStart"
+            android:layout_marginStart="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#FF4A4A"
+            />
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Share"
+            android:text="@string/Share"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#888787"
+            />
+        <TextView
+            android:id="@+id/MyAboutPage"
+            android:text="@string/MyAboutPage"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_version"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

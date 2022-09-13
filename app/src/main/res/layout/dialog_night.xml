@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        >
+
+    <TextView
+        android:id="@+id/night_SW_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/night_SW_title"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+    <Switch
+        android:id="@+id/night_SW"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/night_SW_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="#FF4A4A"
+            android:text="@string/night_SW_tip"
+            android:layout_marginStart="15dp"
+            />
+
+    </LinearLayout>
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+    <TextView
+        android:id="@+id/night_time_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/night_time_period"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/night_time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/night_time_start"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/time_start_hour"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:hint="@string/time_hour"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_shape"
+            android:textColor="@color/black"
+            android:textColorHint="#AEABAB"
+            />
+        <TextView
+            android:id="@+id/time_start_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_colon"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            />
+        <EditText
+            android:id="@+id/time_start_minute"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:hint="@string/time_minute"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEABAB"
+            android:background="@drawable/edit_text_shape"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/night_time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/night_time_end"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/time_end_hour"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:hint="@string/time_hour"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="9dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEABAB"
+            android:background="@drawable/edit_text_shape"
+            />
+        <TextView
+            android:id="@+id/time_end_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_colon"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="9dp"
+            />
+
+        <EditText
+            android:id="@+id/time_end_minute"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:hint="@string/time_minute"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="9dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEABAB"
+            android:background="@drawable/edit_text_shape"
+            />
+
+    </LinearLayout>
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+    <TextView
+        android:id="@+id/night_color_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/night_color_title"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/night_color_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_color_title_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+        <Button
+            android:id="@+id/night_color_select"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:onClick="night_color_select"
+            android:text="@string/night_color_select"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape2"/>
+
+        <View
+            android:id="@+id/night_color_select_round"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="night_color_select_round"
+            android:layout_gravity="center"
+            android:background="@drawable/round"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+        <TextView
+            android:id="@+id/night_background_color_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_background_color_title"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/night_background_color_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_background_color_title_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+            <Button
+                android:id="@+id/night_background_color_select"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:onClick="night_background_color_select"
+                android:text="@string/night_background_color_select"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shape2"/>
+
+            <View
+                android:id="@+id/night_background_color_select_round"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="night_background_color_select_round"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Switch
+                android:id="@+id/night_background_edit_image_SW"
+                android:layout_width="58dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textColor="#FF4A4A"
+                android:text="@string/night_background_edit_image_SW_tip"
+                android:layout_marginStart="8dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/night_background_edit_color_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_background_edit_color_image"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            />
+
+        <Button
+            android:id="@+id/night_background_edit_image_select"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:onClick="night_background_edit_image_select"
+            android:text="@string/background_edit_image_select"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape2"/>
+
+        <ImageView
+            android:id="@+id/night_image"
+            android:layout_width="410px"
+            android:layout_height="195px"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            tools:ignore="ContentDescription" />
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Switch
+                android:id="@+id/night_quote_SW"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:onClick="night_quote_SW"
+                android:gravity="center"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:id="@+id/night_quote_SW_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textColor="#FF4A4A"
+                android:text="@string/night_quote_SW_tip"
+                android:layout_marginStart="15dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/night_quote_edit_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_quote_edit_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            />
+
+        <TextView
+            android:id="@+id/night_quote_edit_color_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_quote_edit_color_title_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/night_quote_edit_color_select"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:onClick="night_quote_edit_color_select"
+                android:text="@string/common_edit_color_select"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape2"/>
+
+            <View
+                android:id="@+id/night_quote_edit_color_select_round"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="night_quote_edit_color_select_round"
+                android:layout_gravity="center"
+                android:background="@drawable/round"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/night_quote_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_quote_title"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/night_quote"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint="@string/dialog_quote_text_hint"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="9dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEABAB"
+            android:background="@drawable/edit_text_shape"
+            />
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+    <TextView
+        android:id="@+id/day_color_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/day_color_title"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/day_color_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_color_title_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/day_color_select"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:onClick="day_color_select"
+            android:text="@string/day_color_select"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape2"/>
+
+        <View
+            android:id="@+id/day_color_select_round"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="day_color_select_round"
+            android:layout_gravity="center"
+            android:background="@drawable/round"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+        <TextView
+            android:id="@+id/day_background_color_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_background_color_title"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/day_background_color_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_background_color_title_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+            <Button
+                android:id="@+id/day_background_color_select"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:onClick="day_background_color_select"
+                android:text="@string/day_background_color_select"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/shape2"/>
+
+            <View
+                android:id="@+id/day_background_color_select_round"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="day_background_color_select_round"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Switch
+                android:id="@+id/day_background_edit_image_SW"
+                android:layout_width="58dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textColor="#FF4A4A"
+                android:text="@string/day_background_edit_image_SW_tip"
+                android:layout_marginStart="8dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/day_background_edit_color_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_background_edit_color_image"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            />
+
+        <Button
+            android:id="@+id/day_background_edit_image_select"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:onClick="day_background_edit_image_select"
+            android:text="@string/background_edit_image_select"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape2"/>
+
+        <ImageView
+            android:id="@+id/day_image"
+            android:layout_width="410px"
+            android:layout_height="195px"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            tools:ignore="ContentDescription" />
+
+        <View  android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#0071FE"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Switch
+                android:id="@+id/day_quote_SW"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:onClick="day_quote_SW"
+                android:gravity="center"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:id="@+id/day_quote_SW_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textColor="#FF4A4A"
+                android:text="@string/day_quote_SW_tip"
+                android:layout_marginStart="15dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/day_quote_edit_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_quote_edit_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            />
+
+        <TextView
+            android:id="@+id/day_quote_edit_color_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_quote_edit_color_title_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/day_quote_edit_color_select"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:onClick="day_quote_edit_color_select"
+                android:text="@string/common_edit_color_select"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape2"/>
+
+            <View
+                android:id="@+id/day_quote_edit_color_select_round"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="day_quote_edit_color_select_round"
+                android:layout_gravity="center"
+                android:background="@drawable/round"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/day_quote_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_quote_title"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/day_quote"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint="@string/dialog_quote_text_hint"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEABAB"
+            android:background="@drawable/edit_text_shape"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
