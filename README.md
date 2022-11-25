@@ -1,6 +1,11 @@
 # BunnyClock
 自己制作的自定义度非常高的数字时钟，用到了安卓的TextClock
 
+抖音视频演示：
+
+https://v.douyin.com/rbABW4q/
+
+
 颜色自定义中的取色器库引用的是 ColorPicker: https://github.com/jaredrummler/ColorPicker
 
 关于界面库引用的是 android-about-page: https://github.com/medyo/android-about-page
